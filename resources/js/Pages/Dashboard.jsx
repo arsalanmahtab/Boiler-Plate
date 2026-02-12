@@ -1,6 +1,7 @@
 import {
     Box, 
-    Page
+    Page,
+    Text
 } from '@shopify/polaris';
 
 export default function Dashboard() {
@@ -11,6 +12,8 @@ export default function Dashboard() {
                 fullWidth
                 backAction={() => { }}
             >
+
+                <Text>b </Text>
             </Page>
         </Box>
     )

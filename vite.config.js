@@ -11,6 +11,9 @@ export default defineConfig({
         }),
         react(),
     ],
+    server:{
+host: 'localhost',
+    },
     resolve: {
         alias: {
             '@': resolve(__dirname, 'resources/js'),
