@@ -13,7 +13,8 @@ export default function Dashboard() {
                 backAction={() => { }}
             >
 
-                <Text>b </Text>
+                <Text>Product Sync Job </Text>
+                <Text>Use the button below to sync products from your Shopify store to the app's database.</Text>
             </Page>
         </Box>
     )
