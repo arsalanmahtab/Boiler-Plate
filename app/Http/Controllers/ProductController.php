@@ -7,9 +7,9 @@ use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $products = Product::with('variants')->get();
+        $products = Product::with('variants')->cursorPaginate(20);
         return response()->json($products);
     }
 }

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CollectionController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use App\Http\Controllers\DashboardController;
@@ -11,7 +12,8 @@ Route::group(['middleware' => ['verify.embedded', 'verify.shopify']], function (
 
     Route::get('/', [DashboardController::class, 'index'])->name('home');
     Route::get('/products', [ProductController::class, 'index'])->name('products.index');
-
+    Route::get('/collections', [CollectionController::class, 'index'])->name('collections.index');
+    
     
     });
     
